@@ -1,0 +1,152 @@
+{
+    "info": {
+        "_postman_id": "dc39020a-dad3-4882-a6d0-ff00e6d8d1c5",
+        "name": "Project 2",
+        "schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+    },
+    "item": [
+        {
+            "name": "create user",
+            "id": "6489ac0c-b5b7-434c-b504-69eeeb04ffab",
+            "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{ "firstname": "test firstname", "lastname": "test lastname", "password": "password123" }",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    }
+                },
+                "url": "http://localhost:3000/users"
+            },
+            "response": []
+        },
+        {
+            "name": "show product",
+            "id": "754d9491-9746-49d3-9b35-744750b3f2b9",
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "request": {
+                "method": "GET",
+                "header": [],
+                "body": {
+                    "mode": "raw",
+                    "raw": "",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    }
+                },
+                "url": "http://localhost:3000/products/1"
+            },
+            "response": []
+        },
+        {
+            "name": "index products",
+            "id": "fb68236e-2e06-4f56-a391-8a7538c95d3d",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": "http://localhost:3000/products"
+            },
+            "response": []
+        },
+        {
+            "name": "create product",
+            "id": "067ac3c5-939c-402a-a2a5-508a22c9b9a3",
+            "request": {
+                "auth": {
+                    "type": "bearer",
+                    "bearer": {
+                        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo3LCJmaXJzdG5hbWUiOiJLaGFsZWQiLCJsYXN0bmFtZSI6ImFsZmF3YXoiLCJwYXNzd29yZCI6IiQyYiQxMiQvOHlXRUU2Yk90Z0pBYzhVdWxuRzEuRy96U3FLSW5DR3lSeGQySXFNbmNMRDk0cS5MaVA2UyJ9LCJpYXQiOjE2Njg2MDg5MzN9.bAzL5KWezJq-Gha-Z8Gp76A6xF7Me5aeeoeCx3k3Yms"
+                    }
+                },
+                "method": "POST",
+                "header": [
+                    {
+                        "key": "authorization",
+                        "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo3LCJmaXJzdG5hbWUiOiJLaGFsZWQiLCJsYXN0bmFtZSI6ImFsZmF3YXoiLCJwYXNzd29yZCI6IiQyYiQxMiQvOHlXRUU2Yk90Z0pBYzhVdWxuRzEuRy96U3FLSW5DR3lSeGQySXFNbmNMRDk0cS5MaVA2UyJ9LCJpYXQiOjE2Njg2MDg5MzN9.bAzL5KWezJq-Gha-Z8Gp76A6xF7Me5aeeoeCx3k3Yms",
+                        "type": "text",
+                        "disabled": true
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{ "name": "test product", "price": 20 }",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    }
+                },
+                "url": "http://localhost:3000/products"
+            },
+            "response": []
+        },
+        {
+            "name": "index users",
+            "id": "65c1f03e-93bd-48e3-8362-ffe884478713",
+            "request": {
+                "auth": {
+                    "type": "bearer",
+                    "bearer": {
+                        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo3LCJmaXJzdG5hbWUiOiJLaGFsZWQiLCJsYXN0bmFtZSI6ImFsZmF3YXoiLCJwYXNzd29yZCI6IiQyYiQxMiQvOHlXRUU2Yk90Z0pBYzhVdWxuRzEuRy96U3FLSW5DR3lSeGQySXFNbmNMRDk0cS5MaVA2UyJ9LCJpYXQiOjE2Njg2MDg5MzN9.bAzL5KWezJq-Gha-Z8Gp76A6xF7Me5aeeoeCx3k3Yms"
+                    }
+                },
+                "method": "GET",
+                "header": [],
+                "url": "http://localhost:3000/users"
+            },
+            "response": []
+        },
+        {
+            "name": "show user",
+            "id": "f5623e25-436a-44f3-a78e-53873a62d212",
+            "request": {
+                "auth": {
+                    "type": "bearer",
+                    "bearer": {
+                        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo3LCJmaXJzdG5hbWUiOiJLaGFsZWQiLCJsYXN0bmFtZSI6ImFsZmF3YXoiLCJwYXNzd29yZCI6IiQyYiQxMiQvOHlXRUU2Yk90Z0pBYzhVdWxuRzEuRy96U3FLSW5DR3lSeGQySXFNbmNMRDk0cS5MaVA2UyJ9LCJpYXQiOjE2Njg2MDg5MzN9.bAzL5KWezJq-Gha-Z8Gp76A6xF7Me5aeeoeCx3k3Yms"
+                    }
+                },
+                "method": "GET",
+                "header": [],
+                "url": "http://localhost:3000/users/8"
+            },
+            "response": []
+        },
+        {
+            "name": "current order by user",
+            "id": "c844c526-322d-4402-8cb7-ca8d76c59078",
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "request": {
+                "auth": {
+                    "type": "bearer",
+                    "bearer": {
+                        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo3LCJmaXJzdG5hbWUiOiJLaGFsZWQiLCJsYXN0bmFtZSI6ImFsZmF3YXoiLCJwYXNzd29yZCI6IiQyYiQxMiQvOHlXRUU2Yk90Z0pBYzhVdWxuRzEuRy96U3FLSW5DR3lSeGQySXFNbmNMRDk0cS5MaVA2UyJ9LCJpYXQiOjE2Njg2MDg5MzN9.bAzL5KWezJq-Gha-Z8Gp76A6xF7Me5aeeoeCx3k3Yms"
+                    }
+                },
+                "method": "GET",
+                "header": [],
+                "body": {
+                    "mode": "raw",
+                    "raw": "",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    }
+                },
+                "url": "http://localhost:3000/orders/7"
+            },
+            "response": []
+        }
+    ]
+}
